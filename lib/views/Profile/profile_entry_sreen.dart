@@ -100,7 +100,7 @@ class ProfileEntryScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -135,7 +135,7 @@ class ProfileEntryScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Phone Number',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -170,7 +170,7 @@ class ProfileEntryScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Identity Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -205,7 +205,7 @@ class ProfileEntryScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'National ID Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -240,7 +240,7 @@ class ProfileEntryScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Date of Birth',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),

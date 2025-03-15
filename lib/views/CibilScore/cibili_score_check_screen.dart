@@ -45,7 +45,7 @@ class CheckCIBILScoreScreen extends BaseRoute {
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           'PAN Card No',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       Padding(
@@ -75,7 +75,7 @@ class CheckCIBILScoreScreen extends BaseRoute {
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           'Mobile No',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       Padding(

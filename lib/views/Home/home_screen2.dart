@@ -1,6 +1,5 @@
 // ignore_for_file: non_constant_identifier_names, must_be_immutable
 //flutter
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:credit_app/controllers/business_loan_controller.dart';
 import 'package:credit_app/controllers/home_controller.dart';
 import 'package:credit_app/controllers/home_loan_controller.dart';
@@ -12,6 +11,7 @@ import 'package:credit_app/views/Notifications/notification_screen.dart';
 import 'package:credit_app/widget/drawer_widget.dart';
 import 'package:credit_app/widget/elevated_button_widget.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+
 //controllers
 import 'package:credit_app/utils/global.dart' as global;
 import 'package:credit_app/views/BusinessLoan/choose_screen_blscreen.dart';
@@ -25,14 +25,17 @@ import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/baseRoute.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //packages
 import 'package:get/get.dart';
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
 
 class HomeScreen2 extends BaseRoute {
   final HomeController homeController = Get.put(HomeController());
-  late CarouselController carouselController;
+  late carousel_slider.CarouselController carouselController;
+
   late int selectedimg;
 
   void BasicDetailEntryPLScreen({a, o}) {
@@ -138,7 +141,8 @@ class HomeScreen2 extends BaseRoute {
   //a - analytics
   //o - observer
   HomeScreen2({a, o, phone_number}) : super(a: a, o: o, r: 'HomeScreen2') {
-    carouselController = CarouselController();
+    carouselController =
+        CarouselController() as carousel_slider.CarouselController;
     selectedimg = 0;
   }
   List<Widget> banners(context) {
@@ -258,32 +262,35 @@ class HomeScreen2 extends BaseRoute {
                               children: [
                                 Column(
                                   children: [
-                                    CarouselSlider(
+                                    carousel_slider.CarouselSlider(
                                         items: banners(context),
                                         carouselController: carouselController,
-                                        options: CarouselOptions(
-                                            height: MediaQuery.of(context)
-                                                    .size
-                                                    .height *
-                                                0.20,
-                                            aspectRatio: 1,
-                                            viewportFraction: 1,
-                                            initialPage:
-                                                homeController.currentIndex,
-                                            enableInfiniteScroll: false,
-                                            reverse: false,
-                                            autoPlay: true,
-                                            autoPlayInterval:
-                                                Duration(seconds: 3),
-                                            autoPlayAnimationDuration:
-                                                Duration(milliseconds: 800),
-                                            autoPlayCurve: Curves.fastOutSlowIn,
-                                            enlargeCenterPage: true,
-                                            scrollDirection: Axis.horizontal,
-                                            onPageChanged: (index, _) {
-                                              homeController
-                                                  .setCurrentIndex(index);
-                                            })),
+                                        options:
+                                            carousel_slider.CarouselOptions(
+                                                height: MediaQuery.of(context)
+                                                        .size
+                                                        .height *
+                                                    0.20,
+                                                aspectRatio: 1,
+                                                viewportFraction: 1,
+                                                initialPage:
+                                                    homeController.currentIndex,
+                                                enableInfiniteScroll: false,
+                                                reverse: false,
+                                                autoPlay: true,
+                                                autoPlayInterval:
+                                                    Duration(seconds: 3),
+                                                autoPlayAnimationDuration:
+                                                    Duration(milliseconds: 800),
+                                                autoPlayCurve:
+                                                    Curves.fastOutSlowIn,
+                                                enlargeCenterPage: true,
+                                                scrollDirection:
+                                                    Axis.horizontal,
+                                                onPageChanged: (index, _) {
+                                                  homeController
+                                                      .setCurrentIndex(index);
+                                                })),
                                     Padding(
                                       padding: const EdgeInsets.only(top: 0),
                                       child: DotsIndicator(
@@ -454,7 +461,7 @@ class HomeScreen2 extends BaseRoute {
                               ),
                               title: Text(
                                 'EMI Calculator',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                               onTap: () {
                                 Get.to(() => (EmiCalculatorScreen(
@@ -506,7 +513,7 @@ class HomeScreen2 extends BaseRoute {
                               ),
                               title: Text(
                                 'Check CIB',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                               onTap: () {
                                 Get.to(() => (CheckCIBILScoreScreen(
@@ -553,8 +560,9 @@ class HomeScreen2 extends BaseRoute {
                           children: [
                             Text(
                               '${titleList[index]}',
-                              style:
-                                  Theme.of(context).primaryTextTheme.headline1,
+                              style: Theme.of(context)
+                                  .primaryTextTheme
+                                  .displayLarge,
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 5),
@@ -564,7 +572,7 @@ class HomeScreen2 extends BaseRoute {
                                     '${subTitle[index]}',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline2,
+                                        .displayMedium,
                                   )),
                             ),
                           ],
@@ -704,7 +712,7 @@ class HomeScreen2 extends BaseRoute {
                                         "Test",
                                         style: Theme.of(context)
                                             .primaryTextTheme
-                                            .subtitle1,
+                                            .titleMedium,
                                       ),
                                     ],
                                   ),
@@ -713,7 +721,7 @@ class HomeScreen2 extends BaseRoute {
                                       Text('ebook for ',
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline6),
+                                              .titleLarge),
                                     ],
                                   ),
                                 ],

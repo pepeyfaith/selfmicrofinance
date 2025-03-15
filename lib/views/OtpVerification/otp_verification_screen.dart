@@ -55,19 +55,19 @@ class OtpVerificationScreen extends BaseRoute {
                       alignment: Alignment.center,
                       child: Text(
                         'OTP Verification',
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5.0),
                       child: Text(
                         'An authentication code has been sent to',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                     Text(
                       '+255656065737',
-                      style: Theme.of(context).textTheme.subtitle2,
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ],
                 ),
@@ -81,10 +81,10 @@ class OtpVerificationScreen extends BaseRoute {
                       fieldsAlignment: MainAxisAlignment.spaceBetween,
                       eachFieldConstraints:
                           BoxConstraints(maxWidth: 55, maxHeight: 55),
-                      textStyle: Theme.of(context).textTheme.headline3,
+                      textStyle: Theme.of(context).textTheme.displaySmall,
                       inputDecoration: InputDecoration(
                         counterStyle:
-                            Theme.of(context).primaryTextTheme.headline6,
+                            Theme.of(context).primaryTextTheme.titleLarge,
                         //  fillColor: Color(0xffF4F5F7),
                         border: InputBorder.none,
                         counterText: '',
@@ -117,13 +117,13 @@ class OtpVerificationScreen extends BaseRoute {
                       children: [
                         Text(
                           "I didn't receive the code. ",
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                         GestureDetector(
                           onTap: () {},
                           child: Text(
                             "Resend Code",
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                       ],

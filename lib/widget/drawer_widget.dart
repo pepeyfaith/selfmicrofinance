@@ -5,9 +5,6 @@ import 'package:credit_app/controllers/loginController.dart';
 import 'package:credit_app/views/CibilScore/cibili_score_check_screen.dart';
 import 'package:credit_app/views/CustomerService/customer_service.dart';
 import 'package:credit_app/views/EMICalculator/emi_calculator_screen.dart';
-import 'package:credit_app/views/LoanCompare/loan_compare_screen.dart';
-import 'package:credit_app/views/LoanEligibility/check_loan_eligibility_screen.dart';
-import 'package:credit_app/views/Login/login_screen.dart';
 import 'package:credit_app/views/Refer&Earn/refer_and_earn_screen.dart';
 import 'package:credit_app/views/Rewards/reward_screen.dart';
 import 'package:credit_app/views/Setting/setting_screen.dart';
@@ -50,11 +47,11 @@ class DrawerWidget extends BaseRoute {
                     ),
                     title: Text(
                       'Faith Felix',
-                      style: Theme.of(context).primaryTextTheme.headline5,
+                      style: Theme.of(context).primaryTextTheme.headlineSmall,
                     ),
                     subtitle: Text(
                       'Loan Officer',
-                      style: Theme.of(context).textTheme.bodyText2,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ),
                 ),
@@ -70,7 +67,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Home 1',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     bottomNavController.setHome2();
@@ -90,7 +87,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Home 2',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     bottomNavController.setHome();
@@ -111,7 +108,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'EMI Calculator',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => (EmiCalculatorScreen(
@@ -133,7 +130,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Check CIB Score',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => (CheckCIBILScoreScreen(
@@ -155,7 +152,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Loan Eligibility',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     // Get.to(() => (CheckLoanEligibilityScreen(
@@ -177,7 +174,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Compare Loan',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     // loanCompareController.loanamount.text = "100000";
@@ -202,7 +199,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Wallet',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => (MyWalletScreen(
@@ -224,7 +221,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Rewards',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => (RewardScreen(
@@ -246,7 +243,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Refer & Earn',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => (ReferralAndEarnScreen(
@@ -268,7 +265,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Customer Service',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => CustomerServiceScreen(
@@ -290,7 +287,7 @@ class DrawerWidget extends BaseRoute {
                   ),
                   title: Text(
                     'Settings',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.to(() => SettingScreen(
@@ -309,7 +306,7 @@ class DrawerWidget extends BaseRoute {
                       color: Colors.black, size: 20),
                   title: Text(
                     'Sign Out',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onTap: () {
                     Get.defaultDialog(

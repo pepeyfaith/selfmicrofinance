@@ -25,7 +25,7 @@ class CustomDropDown extends StatelessWidget {
           value: value,
           child: Text(
             value.toString(),
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         );
       }).toList(),

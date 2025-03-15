@@ -84,7 +84,7 @@ class ProfileScreen extends BaseRoute {
                                       'UserName',
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .headline4,
+                                          .headlineMedium,
                                     ),
                                   ],
                                 ),
@@ -115,14 +115,15 @@ class ProfileScreen extends BaseRoute {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text('Phone Number',
-                                style: Theme.of(context).textTheme.headline5),
+                                style:
+                                    Theme.of(context).textTheme.headlineSmall),
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 05),
                         child: Text('0656065737',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),
@@ -148,14 +149,15 @@ class ProfileScreen extends BaseRoute {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text('Email Id',
-                                style: Theme.of(context).textTheme.headline5),
+                                style:
+                                    Theme.of(context).textTheme.headlineSmall),
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 05),
                         child: Text('faith@gmail.com',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),
@@ -181,14 +183,15 @@ class ProfileScreen extends BaseRoute {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text('Identity Card',
-                                style: Theme.of(context).textTheme.headline5),
+                                style:
+                                    Theme.of(context).textTheme.headlineSmall),
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 05),
                         child: Text('abc@gmail.com',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),
@@ -214,14 +217,15 @@ class ProfileScreen extends BaseRoute {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text('Date of Birth',
-                                style: Theme.of(context).textTheme.headline5),
+                                style:
+                                    Theme.of(context).textTheme.headlineSmall),
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 05),
                         child: Text('01-02-1996',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),
@@ -247,14 +251,15 @@ class ProfileScreen extends BaseRoute {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text('National Card',
-                                style: Theme.of(context).textTheme.headline5),
+                                style:
+                                    Theme.of(context).textTheme.headlineSmall),
                           ),
                         ],
                       ),
                       Padding(
                         padding: EdgeInsets.only(left: 05),
                         child: Text('5677121220541264',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),

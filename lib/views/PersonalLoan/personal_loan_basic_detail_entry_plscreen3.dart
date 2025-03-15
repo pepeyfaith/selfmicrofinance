@@ -102,7 +102,7 @@ class BasicDetailEntryPLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Group name',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -137,7 +137,7 @@ class BasicDetailEntryPLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Group number',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -172,7 +172,7 @@ class BasicDetailEntryPLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Registration Date',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -442,7 +442,7 @@ class BasicDetailEntryPLScreen extends BaseRoute {
                     children: [
                       Text(
                         '${titles[personalLoanController.indexValue.value]}',
-                        style: Theme.of(context).primaryTextTheme.headline3,
+                        style: Theme.of(context).primaryTextTheme.displaySmall,
                       ),
                       Container(
                           width: Get.width,

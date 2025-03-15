@@ -69,12 +69,12 @@ class PermissionScreen extends BaseRoute {
                                 ),
                                 title: Text('Camera',
                                     style:
-                                        Theme.of(context).textTheme.headline6),
+                                        Theme.of(context).textTheme.titleLarge),
                                 subtitle: Text(
                                     'This app needs camera access to take pictures for upload user profile photo',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3),
+                                        .displaySmall),
                                 onTap: () {},
                               ),
                             ),
@@ -108,13 +108,13 @@ class PermissionScreen extends BaseRoute {
                                 ),
                                 title: Text('Storage',
                                     style:
-                                        Theme.of(context).textTheme.headline6),
+                                        Theme.of(context).textTheme.titleLarge),
                                 subtitle: Text(
                                     'This app needs storage permission for read and write internal and external data',
                                     textScaleFactor: 1,
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3),
+                                        .displaySmall),
                                 onTap: () {},
                               ),
                             ),
@@ -148,13 +148,13 @@ class PermissionScreen extends BaseRoute {
                                 ),
                                 title: Text('Contact',
                                     style:
-                                        Theme.of(context).textTheme.headline6),
+                                        Theme.of(context).textTheme.titleLarge),
                                 subtitle: Text(
                                     'This app needs contact permission to access device saved contact number',
                                     textScaleFactor: 1,
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3),
+                                        .displaySmall),
                                 onTap: () {},
                               ),
                             ),
@@ -188,13 +188,13 @@ class PermissionScreen extends BaseRoute {
                                 ),
                                 title: Text('Location',
                                     style:
-                                        Theme.of(context).textTheme.headline6),
+                                        Theme.of(context).textTheme.titleLarge),
                                 subtitle: Text(
                                     'This app needs Location permiss for factching user location',
                                     textScaleFactor: 1,
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3),
+                                        .displaySmall),
                                 onTap: () {},
                               ),
                             ),
@@ -228,13 +228,13 @@ class PermissionScreen extends BaseRoute {
                                 ),
                                 title: Text('SMS',
                                     style:
-                                        Theme.of(context).textTheme.headline6),
+                                        Theme.of(context).textTheme.titleLarge),
                                 subtitle: Text(
                                     'This app needs sms permission for receiving the sms',
                                     textScaleFactor: 1,
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3),
+                                        .displaySmall),
                                 onTap: () {},
                               ),
                             ),

@@ -4,7 +4,6 @@
 import 'package:credit_app/controllers/home_loan_controller.dart';
 import 'package:credit_app/controllers/imageController.dart';
 import 'package:credit_app/controllers/personal_loan_controller.dart';
-import 'package:credit_app/views/SanctionedDisbursal/sanctioned_disbursal_sreen.dart';
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:credit_app/widget/custom_textformfield.dart';
@@ -47,7 +46,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                   // color:Colors.red,
                   child: Text(
                     'Select Image',
-                    style: Theme.of(context).primaryTextTheme.headline5,
+                    style: Theme.of(context).primaryTextTheme.headlineSmall,
                   ),
                 ),
                 Padding(
@@ -125,7 +124,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Personal Information',
-                        style: Theme.of(context).primaryTextTheme.headline1,
+                        style: Theme.of(context).primaryTextTheme.displayLarge,
                       ),
                     ),
                   ),
@@ -135,7 +134,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Father Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -170,7 +169,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Mother Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -211,7 +210,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                                     'Employer Detail',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline1,
+                                        .displayLarge,
                                   ),
                                 ),
                               ),
@@ -222,7 +221,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                                   child: Text(
                                     'Name',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -261,7 +260,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                                   child: Text(
                                     'Phone Number',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -310,7 +309,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                                     'Company Detail',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline1,
+                                        .displayLarge,
                                   ),
                                 ),
                               ),
@@ -321,7 +320,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                                   child: Text(
                                     'Company Name',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -363,7 +362,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'PAN Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -393,7 +392,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'National  Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -423,7 +422,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Bank Statement',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -451,7 +450,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'ITR returns',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -479,7 +478,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Property Documents',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -507,7 +506,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Lod', //Letter of Demand (of Payment)
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -535,7 +534,7 @@ class UploadDocumentTransferHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Existing loan documents',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),

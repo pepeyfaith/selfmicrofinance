@@ -37,7 +37,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 5),
                   child: Text(
                     'Select Image',
-                    style: Theme.of(context).primaryTextTheme.headline5,
+                    style: Theme.of(context).primaryTextTheme.headlineSmall,
                   ),
                 ),
                 Padding(
@@ -116,7 +116,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Photo/Selfie',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -146,7 +146,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Identity card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -176,7 +176,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'National Identity Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -206,7 +206,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Company Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -241,7 +241,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Office Address',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -276,7 +276,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Last 6 month bank statement',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -333,7 +333,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Company Contract Document',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -364,7 +364,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         '3 month salary slip',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -392,7 +392,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Official Email Id',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -438,7 +438,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                                     '2 References',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline1,
+                                        .displayLarge,
                                   ),
                                 ),
                               ),
@@ -449,7 +449,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                                   child: Text(
                                     'First Reference Name',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -488,7 +488,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                                   child: Text(
                                     'First Reference Phone Number',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -527,7 +527,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                                   child: Text(
                                     'Second Reference Name',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -566,7 +566,7 @@ class UploadDocumentPLScreen extends BaseRoute {
                                   child: Text(
                                     'Second Reference Phone Number',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),

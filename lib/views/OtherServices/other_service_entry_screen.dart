@@ -12,7 +12,6 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 //models
 import 'package:credit_app/widget/baseRoute.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 class OtherServicesEntryScreen extends BaseRoute {
@@ -29,6 +28,7 @@ class OtherServicesEntryScreen extends BaseRoute {
         lastDate: DateTime(2050),
         context: context,
         initialDate:
+            // ignore: unnecessary_null_comparison
             selectedBirthDate != null ? selectedBirthDate : DateTime.now(),
         firstDate: DateTime(1940),
       );
@@ -76,7 +76,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Full Name',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -109,7 +109,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Birth Date',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -142,7 +142,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Identity Card',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -175,7 +175,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Phone Number',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -208,7 +208,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Email Id',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -241,7 +241,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Communication Address',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -274,7 +274,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Work Detail',
-                      style: Theme.of(context).primaryTextTheme.headline1,
+                      style: Theme.of(context).primaryTextTheme.displayLarge,
                     ),
                   ),
                 ),
@@ -284,7 +284,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 30),
                     child: Text(
                       'Employment Type',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -308,7 +308,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                     padding: EdgeInsets.only(top: 15),
                     child: Text(
                       'Your Monthly Income',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                   ),
                 ),
@@ -345,7 +345,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                 padding: EdgeInsets.only(top: 15),
                                 child: Text(
                                   'Service Type',
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                               ),
                             ),
@@ -373,7 +373,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                 padding: EdgeInsets.only(top: 15),
                                 child: Text(
                                   'Nature of Employment',
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                               ),
                             ),
@@ -410,7 +410,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                 padding: EdgeInsets.only(top: 15),
                                 child: Text(
                                   'Industry',
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                               ),
                             ),
@@ -460,7 +460,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                     child: Text('Work Address',
                                         style: Theme.of(context)
                                             .primaryTextTheme
-                                            .headline1),
+                                            .displayLarge),
                                   ),
                                   Container(
                                     width: Get.width,
@@ -470,7 +470,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'Address Line 1',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -506,7 +506,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'Address Line 2',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -542,7 +542,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'Area',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -578,7 +578,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'Pin Code',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -614,7 +614,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'City',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -650,7 +650,7 @@ class OtherServicesEntryScreen extends BaseRoute {
                                         'State',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),

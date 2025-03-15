@@ -50,14 +50,14 @@ class LoginScreen extends BaseRoute {
                           alignment: Alignment.center,
                           child: Text(
                             'Login',
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headlineMedium,
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Text(
                             'with your mobile number',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                         ),
                       ],

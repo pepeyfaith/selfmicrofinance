@@ -51,7 +51,7 @@ class LoanDetailScreen extends BaseRoute {
               unselectedLabelColor: Colors.grey,
               indicatorSize: TabBarIndicatorSize.tab,
               labelColor: Theme.of(context).primaryColor,
-              labelStyle: Theme.of(context).textTheme.headline5,
+              labelStyle: Theme.of(context).textTheme.headlineSmall,
               tabs: [
                 Tab(
                   child: Text(
@@ -79,13 +79,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Full Name",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("Faith lyxie Pepey",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -97,13 +99,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Date of Birth",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("10/01/1985",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -115,13 +119,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Gender",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("Female",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -133,13 +139,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Identity Number",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("TZBARAA62",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -151,13 +159,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Identity Number",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("1985210014001584",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -169,13 +179,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Monthly Income",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("${global.currencySymbol}25000",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -187,13 +199,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Other Income",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("${global.currencySymbol}5000",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -205,13 +219,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Loan Type",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("Home Loan",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -223,13 +239,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Loan Amount",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("${global.currencySymbol}500000",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -241,13 +259,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Employment Type",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("Self Employee",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           ),
@@ -259,13 +279,15 @@ class LoanDetailScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 0),
                             child: ListTile(
                               title: Text("Address",
-                                  style: Theme.of(context).textTheme.headline5),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall),
                               subtitle: Padding(
                                 padding: const EdgeInsets.only(left: 0, top: 5),
                                 child: Text("kigamboni,Dar es Salaam,Tanzania",
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline6),
+                                        .titleLarge),
                               ),
                             ),
                           )
@@ -280,7 +302,8 @@ class LoanDetailScreen extends BaseRoute {
                         children: [
                           Text(
                             'Photo',
-                            style: Theme.of(context).primaryTextTheme.headline1,
+                            style:
+                                Theme.of(context).primaryTextTheme.displayLarge,
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
@@ -309,7 +332,8 @@ class LoanDetailScreen extends BaseRoute {
                           ),
                           Text(
                             'PAN Card',
-                            style: Theme.of(context).primaryTextTheme.headline1,
+                            style:
+                                Theme.of(context).primaryTextTheme.displayLarge,
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
@@ -338,7 +362,8 @@ class LoanDetailScreen extends BaseRoute {
                           ),
                           Text(
                             'National  Card',
-                            style: Theme.of(context).primaryTextTheme.headline1,
+                            style:
+                                Theme.of(context).primaryTextTheme.displayLarge,
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),

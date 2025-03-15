@@ -1,9 +1,7 @@
 // ignore_for_file: must_be_immutable
 //flutter
 import 'package:credit_app/controllers/personal_loan_controller.dart';
-import 'package:credit_app/views/PersonalLoan/upload_document_plscreen.dart';
 import 'package:credit_app/views/bottom_navigation_screen.dart';
-import 'package:credit_app/views/PersonalLoan/more_employement_detail_plscreen.dart';
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:credit_app/widget/custom_dropdown.dart';
@@ -96,7 +94,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Alternative Phone Number',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -131,7 +129,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Gender',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -154,7 +152,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                 'Male',
                                 style: Theme.of(context)
                                     .primaryTextTheme
-                                    .headline3,
+                                    .displaySmall,
                               )
                             ],
                           ),
@@ -170,7 +168,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                               Text('Female',
                                   style: Theme.of(context)
                                       .primaryTextTheme
-                                      .headline3)
+                                      .displaySmall)
                             ],
                           ),
                         ],
@@ -183,7 +181,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Marital Status',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -207,7 +205,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                   'Married',
                                   style: Theme.of(context)
                                       .primaryTextTheme
-                                      .headline3,
+                                      .displaySmall,
                                 )
                               ],
                             ),
@@ -224,7 +222,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                 Text('Unmarried',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline3)
+                                        .displaySmall)
                               ],
                             ),
                           ],
@@ -247,7 +245,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                       'Spouse Detail',
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .headline1,
+                                          .displayLarge,
                                     ),
                                   ),
                                   Container(
@@ -258,7 +256,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                         'Name',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -299,7 +297,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                                         'Phone Number',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1,
+                                            .bodyLarge,
                                       ),
                                     ),
                                   ),
@@ -344,7 +342,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Family Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -379,7 +377,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Family Phone Number',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -414,7 +412,7 @@ class MoreBasicDetailEntryPLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Select Nominee',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),

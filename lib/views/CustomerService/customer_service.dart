@@ -47,7 +47,8 @@ class CustomerServiceScreen extends BaseRoute {
                         padding: const EdgeInsets.only(left: 10),
                         child: Text(
                           'Customer Service',
-                          style: Theme.of(context).primaryTextTheme.headline1,
+                          style:
+                              Theme.of(context).primaryTextTheme.displayLarge,
                         ),
                       )
                     ],
@@ -57,19 +58,19 @@ class CustomerServiceScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 15),
                   child: Text(
                     'For any queries or concerns,feel free to reach out to us',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                     textAlign: TextAlign.center,
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: Text('Call us - +255 22 221 188',
-                      style: Theme.of(context).textTheme.headline5),
+                      style: Theme.of(context).textTheme.headlineSmall),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: Text('Mail us - info@self.go.tz',
-                      style: Theme.of(context).textTheme.headline5),
+                      style: Theme.of(context).textTheme.headlineSmall),
                 )
               ],
             ),

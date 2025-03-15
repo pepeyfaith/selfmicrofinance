@@ -47,7 +47,7 @@ class NotificationScreen extends BaseRoute {
                             children: [
                               Text(
                                 'Description',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ],
                             childrenPadding: EdgeInsets.all(8),
@@ -60,7 +60,7 @@ class NotificationScreen extends BaseRoute {
                             ),
                             title: Text(
                               'Title',
-                              style: Theme.of(context).textTheme.headline6,
+                              style: Theme.of(context).textTheme.titleLarge,
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),

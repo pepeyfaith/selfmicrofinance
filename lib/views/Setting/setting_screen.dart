@@ -52,7 +52,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Languages',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -83,7 +83,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Notifications',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -111,7 +111,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Privacy Policy',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -142,7 +142,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Terms & Condition',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -173,7 +173,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('FAQs',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -204,7 +204,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('Love the app? Rate us',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,
@@ -230,7 +230,7 @@ class SettingScreen extends BaseRoute {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('About Us',
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                         Icon(
                           Icons.arrow_forward_ios_sharp,
                           size: 20,

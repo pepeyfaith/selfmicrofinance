@@ -15,29 +15,34 @@ Map<int, Color> color = {
 ThemeData nativeTheme() {
   return ThemeData(
     textTheme: TextTheme(
-      headline1: TextStyle(fontSize: 50, color: Colors.white, fontWeight: FontWeight.bold),
-      headline2: TextStyle(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
-      headline3: TextStyle(fontSize: 24, color: Colors.black, fontWeight: FontWeight.w400),
-      headline4: TextStyle(fontSize: 22, color: Color(0xff0c87e0), fontWeight: FontWeight.bold),
-      bodyText1: TextStyle(
+      displayLarge: TextStyle(
+          fontSize: 50, color: Colors.white, fontWeight: FontWeight.bold),
+      displayMedium: TextStyle(
+          fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),
+      displaySmall: TextStyle(
+          fontSize: 24, color: Colors.black, fontWeight: FontWeight.w400),
+      headlineMedium: TextStyle(
+          fontSize: 22, color: Color(0xff0c87e0), fontWeight: FontWeight.bold),
+      bodyLarge: TextStyle(
         fontSize: 15,
         color: Colors.black,
       ),
-      bodyText2: TextStyle(
+      bodyMedium: TextStyle(
         fontSize: 16,
         color: Colors.white,
       ),
-      subtitle1: TextStyle(color: Color(0xff0c82d5), fontSize: 16, fontWeight: FontWeight.bold),
-      subtitle2: TextStyle(
+      titleMedium: TextStyle(
+          color: Color(0xff0c82d5), fontSize: 16, fontWeight: FontWeight.bold),
+      titleSmall: TextStyle(
         fontSize: 16,
         color: Color(0xFF7853FF),
       ),
-      headline5: TextStyle(
+      headlineSmall: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 17,
         color: Colors.black,
       ),
-      headline6: TextStyle(
+      titleLarge: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 15,
         color: Colors.black,
@@ -47,20 +52,24 @@ ThemeData nativeTheme() {
     primaryColor: Color(0xff0c82d5),
     primarySwatch: MaterialColor(0xff32D6D8, color),
     primaryTextTheme: TextTheme(
-      headline1: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
+      displayLarge: TextStyle(
+          fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
 
-      headline2: TextStyle(
+      displayMedium: TextStyle(
         fontSize: 13,
         color: Colors.black,
       ), //
-      headline3: TextStyle(fontSize: 14, color: Color(0xFF8A959E)), //
-      headline4: TextStyle(fontSize: 19, fontWeight: FontWeight.w600, color: Colors.black),
-      bodyText1: TextStyle(
+      displaySmall: TextStyle(fontSize: 14, color: Color(0xFF8A959E)), //
+      headlineMedium: TextStyle(
+          fontSize: 19, fontWeight: FontWeight.w600, color: Colors.black),
+      bodyLarge: TextStyle(
         color: Colors.white,
         fontSize: 12,
       ),
-      headline5: TextStyle(fontSize: 19, color: Colors.white, fontWeight: FontWeight.bold),
-      headline6: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.normal),
+      headlineSmall: TextStyle(
+          fontSize: 19, color: Colors.white, fontWeight: FontWeight.bold),
+      titleLarge: TextStyle(
+          fontSize: 16, color: Colors.black, fontWeight: FontWeight.normal),
     ),
     cardTheme: CardTheme(
       elevation: 2,
@@ -77,19 +86,23 @@ ThemeData nativeTheme() {
       shape: MaterialStateProperty.all(RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(25),
       )),
-      textStyle: MaterialStateProperty.all(TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500)),
+      textStyle: MaterialStateProperty.all(TextStyle(
+          fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500)),
     )),
     dialogTheme: DialogTheme(
-      contentTextStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.normal, color: Colors.black),
+      contentTextStyle: TextStyle(
+          fontSize: 16, fontWeight: FontWeight.normal, color: Colors.black),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
       ),
       backgroundColor: Colors.grey[100],
-      titleTextStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
+      titleTextStyle: TextStyle(
+          fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
     ),
     fontFamily: 'Roboto',
     inputDecorationTheme: InputDecorationTheme(
-      hintStyle: TextStyle(fontSize: 14, color: Color(0xFF8A8D9F), fontWeight: FontWeight.w400),
+      hintStyle: TextStyle(
+          fontSize: 14, color: Color(0xFF8A8D9F), fontWeight: FontWeight.w400),
       counterStyle: TextStyle(color: Colors.grey),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(25.0)),
@@ -126,7 +139,8 @@ ThemeData nativeTheme() {
         actionsIconTheme: IconThemeData(
           color: Color(0xff0c87e0),
         ),
-        titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+        titleTextStyle: TextStyle(
+            fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
         iconTheme: IconThemeData(color: Colors.black, size: 23)),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
@@ -138,7 +152,8 @@ ThemeData nativeTheme() {
           shadowColor: MaterialStateProperty.all(Colors.white),
           overlayColor: MaterialStateProperty.all(Colors.white),
           foregroundColor: MaterialStateProperty.all(Colors.white),
-          textStyle: MaterialStateProperty.all(TextStyle(fontSize: 16, fontWeight: FontWeight.w700))),
+          textStyle: MaterialStateProperty.all(
+              TextStyle(fontSize: 16, fontWeight: FontWeight.w700))),
     ),
   );
 }

@@ -43,7 +43,9 @@ class AboutUsScreen extends BaseRoute {
                           padding: EdgeInsets.all(0),
                           child: Text(
                             ' SELF Microfinance Fund is a product of Government Project which was known as ‘Small Entrepreneurs Loan Facility (SELF)” formed in 1999. SELF Project was among Government programmes pursuing poverty alleviation role on behalf of the Government which was jointly funded by Government of Tanzania and African Development Bank (AfDB).',
-                            style: Theme.of(context).primaryTextTheme.headline2,
+                            style: Theme.of(context)
+                                .primaryTextTheme
+                                .displayMedium,
                           ),
                         ),
                       ),

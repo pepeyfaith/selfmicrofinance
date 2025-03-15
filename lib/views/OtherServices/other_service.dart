@@ -81,7 +81,7 @@ class OtherServicesScreen extends BaseRoute {
                                     '${titleList[index]}',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline1,
+                                        .displayLarge,
                                   ),
                                   Padding(
                                     padding: EdgeInsets.only(),

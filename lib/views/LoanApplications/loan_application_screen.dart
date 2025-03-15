@@ -63,10 +63,10 @@ class LoanApplicationScreen extends BaseRoute {
                 isScrollable: true,
                 indicatorColor: Theme.of(context).primaryColor,
                 unselectedLabelColor:
-                    Theme.of(context).primaryTextTheme.headline3?.color,
+                    Theme.of(context).primaryTextTheme.displaySmall?.color,
                 indicatorSize: TabBarIndicatorSize.tab,
                 labelColor: Theme.of(context).primaryColor,
-                labelStyle: Theme.of(context).textTheme.headline5,
+                labelStyle: Theme.of(context).textTheme.headlineSmall,
                 tabs: [
                   Tab(
                     child: Text(
@@ -206,19 +206,22 @@ class LoanApplicationScreen extends BaseRoute {
                         children: [
                           Text(
                             '${titleList1[index]}',
-                            style: Theme.of(context).textTheme.headline6,
+                            style: Theme.of(context).textTheme.titleLarge,
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 2, bottom: 2),
                             child: Text(
                               '27-10-2020',
-                              style:
-                                  Theme.of(context).primaryTextTheme.headline2,
+                              style: Theme.of(context)
+                                  .primaryTextTheme
+                                  .displayMedium,
                             ),
                           ),
                           Text(
                             '${global.currencySymbol}200000',
-                            style: Theme.of(context).primaryTextTheme.headline2,
+                            style: Theme.of(context)
+                                .primaryTextTheme
+                                .displayMedium,
                           )
                         ],
                       ),
@@ -250,7 +253,7 @@ class LoanApplicationScreen extends BaseRoute {
                                                 'Edit',
                                                 style: Theme.of(context)
                                                     .primaryTextTheme
-                                                    .headline2,
+                                                    .displayMedium,
                                               ),
                                             ],
                                           ),
@@ -277,7 +280,7 @@ class LoanApplicationScreen extends BaseRoute {
                                                 'Delete',
                                                 style: Theme.of(context)
                                                     .primaryTextTheme
-                                                    .headline2,
+                                                    .displayMedium,
                                               ),
                                             ],
                                           ),
@@ -304,7 +307,7 @@ class LoanApplicationScreen extends BaseRoute {
                                                 'View',
                                                 style: Theme.of(context)
                                                     .primaryTextTheme
-                                                    .headline2,
+                                                    .displayMedium,
                                               ),
                                             ],
                                           ),
@@ -352,7 +355,7 @@ class LoanApplicationScreen extends BaseRoute {
                         alignment: Alignment.center,
                         child: Text(
                           'Filter',
-                          style: Theme.of(context).textTheme.headline4,
+                          style: Theme.of(context).textTheme.headlineMedium,
                         ),
                       ),
                     ),
@@ -363,7 +366,7 @@ class LoanApplicationScreen extends BaseRoute {
                         children: [
                           Text(
                             'Status',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           Container(
                               width: MediaQuery.of(context).size.width / 2,
@@ -391,7 +394,7 @@ class LoanApplicationScreen extends BaseRoute {
                         children: [
                           Text(
                             'Type',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           Container(
                               width: MediaQuery.of(context).size.width / 2,
@@ -486,6 +489,7 @@ class LoanApplicationScreen extends BaseRoute {
       final DateTime? picked = await showDatePicker(
         lastDate: DateTime(2050),
         context: context,
+        // ignore: unnecessary_null_comparison
         initialDate: _fromDate != null ? _fromDate : DateTime.now(),
         firstDate: DateTime(1940),
       );
@@ -505,6 +509,7 @@ class LoanApplicationScreen extends BaseRoute {
       final DateTime? picked = await showDatePicker(
         lastDate: DateTime(2050),
         context: context,
+        // ignore: unnecessary_null_comparison
         initialDate: _fromDate != null ? _fromDate : DateTime.now(),
         firstDate: _fromDate,
       );

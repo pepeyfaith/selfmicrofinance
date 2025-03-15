@@ -52,7 +52,7 @@ class LanguageSelectionScreen extends BaseRoute {
                   global.languageCode = locale.languageCode;
                 },
                 title: Text(l10n.languageListName[index],
-                    style: Theme.of(context).textTheme.bodyText1),
+                    style: Theme.of(context).textTheme.bodyLarge),
               );
             },
           ),

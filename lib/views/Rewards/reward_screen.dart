@@ -52,11 +52,11 @@ class RewardScreen extends BaseRoute {
                 children: [
                   Text(
                     'Total Rewards',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                   Text(
                     '1000',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                 ],
               ),
@@ -82,7 +82,7 @@ class RewardScreen extends BaseRoute {
                                 'No Rewards',
                                 style: Theme.of(context)
                                     .primaryTextTheme
-                                    .headline4,
+                                    .headlineMedium,
                               ),
                             ),
                           ),
@@ -112,7 +112,7 @@ class RewardScreen extends BaseRoute {
               width: MediaQuery.of(context).size.width,
               child: Text(
                 "You won ${global.currencySymbol}5",
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
             )),
       ],

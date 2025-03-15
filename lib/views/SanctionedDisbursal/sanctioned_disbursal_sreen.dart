@@ -54,14 +54,14 @@ class SanctionedDisbursalScreen extends BaseRoute {
               children: [
                 Text(
                   'Loan Status',
-                  style: Theme.of(context).primaryTextTheme.headline1,
+                  style: Theme.of(context).primaryTextTheme.displayLarge,
                 ),
                 Container(
                   padding:
                       EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
                   child: Text(
                     'Pending',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   margin: EdgeInsets.only(top: 10),
                   decoration: BoxDecoration(

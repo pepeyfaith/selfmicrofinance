@@ -3,7 +3,6 @@
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/baseRoute.dart';
 import 'package:credit_app/widget/common_padding.dart';
-import 'package:credit_app/widget/elevated_button_widget.dart';
 import 'package:credit_app/utils/global.dart' as global;
 import 'package:flutter/material.dart';
 //models
@@ -48,11 +47,11 @@ class MyWalletScreen extends BaseRoute {
                   children: [
                     Text(
                       "Total Points",
-                      style: Theme.of(context).textTheme.headline3,
+                      style: Theme.of(context).textTheme.displaySmall,
                     ),
                     Text(
                       "1000",
-                      style: Theme.of(context).textTheme.headline4,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
                   ],
                 ),
@@ -74,11 +73,13 @@ class MyWalletScreen extends BaseRoute {
                     TabBar(
                         onTap: (int index) async {},
                         indicatorColor: Theme.of(context).primaryColor,
-                        unselectedLabelColor:
-                            Theme.of(context).primaryTextTheme.headline3!.color,
+                        unselectedLabelColor: Theme.of(context)
+                            .primaryTextTheme
+                            .displaySmall!
+                            .color,
                         indicatorSize: TabBarIndicatorSize.tab,
                         labelColor: Theme.of(context).primaryColor,
-                        labelStyle: Theme.of(context).textTheme.headline5,
+                        labelStyle: Theme.of(context).textTheme.headlineSmall,
                         tabs: [
                           Tab(
                             child: Text(
@@ -123,19 +124,22 @@ class MyWalletScreen extends BaseRoute {
                         children: [
                           Text(
                             'Cashback Type: ${titleList1[index]}',
-                            style: Theme.of(context).textTheme.headline6,
+                            style: Theme.of(context).textTheme.titleLarge,
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 2, bottom: 2),
                             child: Text(
                               '27-10-2020',
-                              style:
-                                  Theme.of(context).primaryTextTheme.headline2,
+                              style: Theme.of(context)
+                                  .primaryTextTheme
+                                  .displayMedium,
                             ),
                           ),
                           Text(
                             '${global.currencySymbol}150',
-                            style: Theme.of(context).primaryTextTheme.headline2,
+                            style: Theme.of(context)
+                                .primaryTextTheme
+                                .displayMedium,
                           )
                         ],
                       ),
@@ -170,10 +174,10 @@ class MyWalletScreen extends BaseRoute {
                   ),
                   title: Text(
                     'New Product',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                   subtitle: Text('${global.currencySymbol}300',
-                      style: Theme.of(context).primaryTextTheme.headline2),
+                      style: Theme.of(context).primaryTextTheme.displayMedium),
                 ),
               ),
             ),

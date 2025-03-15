@@ -38,7 +38,7 @@ class ReferralAndEarnScreen extends BaseRoute {
                       alignment: Alignment.center,
                       child: Text(
                         'REFER & EARN',
-                        style: Theme.of(context).primaryTextTheme.headline1,
+                        style: Theme.of(context).primaryTextTheme.displayLarge,
                       ),
                     ),
                     Align(
@@ -61,7 +61,7 @@ class ReferralAndEarnScreen extends BaseRoute {
                       alignment: Alignment.center,
                       child: Text(
                         'Refer your friend and knowns to earnmore',
-                        style: Theme.of(context).primaryTextTheme.headline2,
+                        style: Theme.of(context).primaryTextTheme.displayMedium,
                       ),
                     ),
                     Padding(
@@ -94,7 +94,7 @@ class ReferralAndEarnScreen extends BaseRoute {
                                         'you will get 1000 instant after sucessfull signup.',
                                         style: Theme.of(context)
                                             .primaryTextTheme
-                                            .headline2,
+                                            .displayMedium,
                                         textAlign: TextAlign.center),
                                   ),
                                 ),
@@ -126,7 +126,7 @@ class ReferralAndEarnScreen extends BaseRoute {
                                       'You will get 5% from the earning of  the person you referred.',
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .headline2,
+                                          .displayMedium,
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -146,11 +146,12 @@ class ReferralAndEarnScreen extends BaseRoute {
                               children: [
                                 Text(
                                   'YOUR REFER CODE IS ',
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                                 Text(
                                   'FVA4',
-                                  style: Theme.of(context).textTheme.headline3,
+                                  style:
+                                      Theme.of(context).textTheme.displaySmall,
                                 ),
                               ],
                             ),
@@ -164,7 +165,8 @@ class ReferralAndEarnScreen extends BaseRoute {
                       child: Center(
                         child: Text(
                           'Ask your network to enter your referral code while signup to earn benifits of the refer and earn program.',
-                          style: Theme.of(context).primaryTextTheme.headline2,
+                          style:
+                              Theme.of(context).primaryTextTheme.displayMedium,
                           textAlign: TextAlign.center,
                         ),
                       ),

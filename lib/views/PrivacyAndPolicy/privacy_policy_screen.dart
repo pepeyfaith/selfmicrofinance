@@ -42,7 +42,8 @@ class PrivacyPolicyScreen extends BaseRoute {
                         width: MediaQuery.of(context).size.width,
                         child: Text(
                           'To assist us deliver our products and services, we frequently work with outside companies (delivery partners and financial partners) who are experts in particular fields. To forward your application, we will share your information with the pertinent delivery partner and/or financial partner. Both delivery and financial partners have a responsibility to protect your data. If you borrow from us or may borrow from us through one of our financial partners, we will provide credit reference agencies with information about your personal and/or commercial account, including the names of the parties to the account and how you manage it or them. If you borrow money and fail to pay it back on time and in full, the lending company will be notified, and steps will be taken to track you down and collect the debt, either directly from you or through a contract debt collection agency.',
-                          style: Theme.of(context).primaryTextTheme.headline2,
+                          style:
+                              Theme.of(context).primaryTextTheme.displayMedium,
                         ),
                       ),
                     ],

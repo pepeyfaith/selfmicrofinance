@@ -1,7 +1,6 @@
 // ignore_for_file: must_be_immutable
 //flutter
 import 'package:credit_app/controllers/personal_loan_controller.dart';
-import 'package:credit_app/views/PersonalLoan/upload_document_plscreen.dart';
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:credit_app/widget/custom_dropdown.dart';
@@ -12,7 +11,6 @@ import 'package:flutter/material.dart';
 import 'package:credit_app/controllers/splashController.dart';
 //models
 import 'package:credit_app/widget/baseRoute.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //packages
 import 'package:get/get.dart';
 
@@ -76,7 +74,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company Name',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -113,7 +111,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Address',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -150,7 +148,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Designation',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -187,7 +185,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Work Type',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -213,7 +211,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Tenure (Months)',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -250,7 +248,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company Category',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -277,7 +275,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Landline Number',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -314,7 +312,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Experience in profession/Current company experience',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -351,7 +349,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Gross & Annual Income',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -392,7 +390,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Profession Business/Professional',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -429,7 +427,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company Name',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -466,7 +464,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company State',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -503,7 +501,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company Address',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -540,7 +538,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Company City',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -577,7 +575,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Experience in Profession/Current company experience',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),
@@ -614,7 +612,7 @@ class MoreEmployementDetailEntryPLScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Gross & Annual Income',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                           ),

@@ -35,7 +35,7 @@ class FaqsScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 15),
                   child: Text(
                     'FAQs:',
-                    style: Theme.of(context).primaryTextTheme.headline1,
+                    style: Theme.of(context).primaryTextTheme.displayLarge,
                   ),
                 ),
                 Container(
@@ -52,14 +52,14 @@ class FaqsScreen extends BaseRoute {
                             tilePadding: EdgeInsets.all(0),
                             title: Text(
                               'What are the benifits of this app?',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                             children: [
                               Text(
                                   'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content',
                                   style: Theme.of(context)
                                       .primaryTextTheme
-                                      .headline3)
+                                      .displaySmall)
                             ],
                           ),
                         );

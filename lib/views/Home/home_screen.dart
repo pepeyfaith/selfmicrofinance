@@ -129,7 +129,7 @@ class HomeScreen extends BaseRoute {
                                         '${titleList[index]}',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline5,
+                                            .headlineSmall,
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 5),
@@ -139,7 +139,7 @@ class HomeScreen extends BaseRoute {
                                               '${subTitle[index]}',
                                               style: Theme.of(context)
                                                   .primaryTextTheme
-                                                  .headline2,
+                                                  .displayMedium,
                                             )),
                                       ),
                                     ],

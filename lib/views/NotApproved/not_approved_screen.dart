@@ -53,7 +53,7 @@ class NotApprovedScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 15),
                   child: Text(
                     'Application not approved',
-                    style: Theme.of(context).primaryTextTheme.headline4,
+                    style: Theme.of(context).primaryTextTheme.headlineMedium,
                   ),
                 ),
                 Padding(
@@ -62,7 +62,7 @@ class NotApprovedScreen extends BaseRoute {
                   ),
                   child: Text(
                     'Sorry, we are not able to approve your loan application currently',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
                 Padding(
@@ -71,7 +71,7 @@ class NotApprovedScreen extends BaseRoute {
                   ),
                   child: Text(
                     'You can re-apply after 90 days',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
                 Padding(
@@ -80,7 +80,7 @@ class NotApprovedScreen extends BaseRoute {
                   ),
                   child: Text(
                     'Reasons:',
-                    style: Theme.of(context).primaryTextTheme.headline1,
+                    style: Theme.of(context).primaryTextTheme.displayLarge,
                   ),
                 ),
                 ListView.builder(
@@ -94,7 +94,7 @@ class NotApprovedScreen extends BaseRoute {
                         child: ExpansionTile(
                           title: Text(
                             '${reasonTitles[index]}',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           children: [
                             Padding(
@@ -104,7 +104,7 @@ class NotApprovedScreen extends BaseRoute {
                                 'reasons for rejection include a low credit score or bad credit history, a high debt-to-income ratio, unstable employment history, too low of income for the desired loan amount, or missing important information or paperwork within your application.',
                                 style: Theme.of(context)
                                     .primaryTextTheme
-                                    .headline3,
+                                    .displaySmall,
                               ),
                             )
                           ],

@@ -66,7 +66,7 @@ class EmiCalculatorScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Loan Amount',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                             Padding(
@@ -96,7 +96,7 @@ class EmiCalculatorScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Interest Rate (%)',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                             Padding(
@@ -126,7 +126,7 @@ class EmiCalculatorScreen extends BaseRoute {
                               padding: EdgeInsets.only(top: 15),
                               child: Text(
                                 'Tenure (Months)',
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyLarge,
                               ),
                             ),
                             Padding(

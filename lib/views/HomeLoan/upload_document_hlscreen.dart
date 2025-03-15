@@ -2,7 +2,6 @@
 //flutter
 import 'package:credit_app/controllers/home_loan_controller.dart';
 import 'package:credit_app/controllers/imageController.dart';
-import 'package:credit_app/views/SanctionedDisbursal/sanctioned_disbursal_sreen.dart';
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:credit_app/widget/imageWidget.dart';
@@ -42,7 +41,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                   // color:Colors.red,
                   child: Text(
                     'Select Image',
-                    style: Theme.of(context).primaryTextTheme.headline5,
+                    style: Theme.of(context).primaryTextTheme.headlineSmall,
                   ),
                 ),
                 Padding(
@@ -140,7 +139,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'PAN Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -170,7 +169,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'National Card',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -200,7 +199,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Bank Statement',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -230,7 +229,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Photographs',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -265,7 +264,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                                   child: Text(
                                     'Employment Documents',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -305,7 +304,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                                   child: Text(
                                     'Company Documents',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -339,7 +338,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Property Documents',
-                        style: Theme.of(context).primaryTextTheme.headline1,
+                        style: Theme.of(context).primaryTextTheme.displayLarge,
                       ),
                     ),
                   ),
@@ -349,7 +348,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Site Plan',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -379,7 +378,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'property deed',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -409,7 +408,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Buyer Agreement',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -439,7 +438,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Chain Documents',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -469,7 +468,7 @@ class UploadDocumentHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Documents for existing property',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),

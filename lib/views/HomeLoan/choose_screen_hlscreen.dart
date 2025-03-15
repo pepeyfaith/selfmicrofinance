@@ -61,20 +61,20 @@ class chooseScreenHLScreen extends BaseRoute {
               children: [
                 Text(
                   'What are you interested in?',
-                  style: Theme.of(context).primaryTextTheme.headline1,
+                  style: Theme.of(context).primaryTextTheme.displayLarge,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     'Home Loan',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 50),
                   child: Text(
                     'Select type of loan',
-                    style: Theme.of(context).primaryTextTheme.headline1,
+                    style: Theme.of(context).primaryTextTheme.displayLarge,
                   ),
                 ),
                 RadioListTile(
@@ -85,7 +85,7 @@ class chooseScreenHLScreen extends BaseRoute {
                     homeLoanController.setLoanType(value as int);
                   },
                   title: Text("New Loan",
-                      style: Theme.of(context).textTheme.bodyText1),
+                      style: Theme.of(context).textTheme.bodyLarge),
                 ),
                 RadioListTile(
                   dense: true,
@@ -95,7 +95,7 @@ class chooseScreenHLScreen extends BaseRoute {
                     homeLoanController.setLoanType(value as int);
                   },
                   title: Text("Transfer Existing Loan",
-                      style: Theme.of(context).textTheme.bodyText1),
+                      style: Theme.of(context).textTheme.bodyLarge),
                 )
               ],
             )),

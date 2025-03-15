@@ -3,8 +3,6 @@
 
 import 'package:credit_app/controllers/home_loan_controller.dart';
 import 'package:credit_app/controllers/personal_loan_controller.dart';
-import 'package:credit_app/views/HomeLoan/upload_document_hlscreen.dart';
-import 'package:credit_app/views/HomeLoan/upload_document_transfer_hlscreen.dart';
 import 'package:credit_app/widget/appBarWidget.dart';
 import 'package:credit_app/widget/common_padding.dart';
 import 'package:credit_app/widget/custom_dropdown.dart';
@@ -17,7 +15,6 @@ import 'package:flutter/material.dart';
 import 'package:credit_app/controllers/splashController.dart';
 //models
 import 'package:credit_app/widget/baseRoute.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //packages
 import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -64,6 +61,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
           lastDate: DateTime(2050),
           context: context,
           initialDate:
+              // ignore: unnecessary_null_comparison
               _selectedBirthdate != null ? _selectedBirthdate : DateTime.now(),
           firstDate: DateTime(1940),
         );
@@ -77,32 +75,13 @@ class BasicDetailEntryHLScreen extends BaseRoute {
       }
     }
 
-    Future _selectApproxeDateOfLoan() async {
-      try {
-        final DateTime? picked = await showDatePicker(
-          lastDate: DateTime(2050),
-          context: context,
-          initialDate: _selectedApproxeDateOfLoan != null
-              ? _selectedApproxeDateOfLoan
-              : DateTime.now(),
-          firstDate: DateTime(1940),
-        );
-        if (picked != null && picked != DateTime(2000)) {
-          _selectedApproxeDateOfLoan = picked;
-          cApproxeDateOfLoan.text =
-              formatDate(_selectedApproxeDateOfLoan, [dd, '-', mm, '-', yyyy]);
-        }
-      } catch (e) {
-        print('Exception - addCoupon - _selectBirthdate(): ' + e.toString());
-      }
-    }
-
     Future _selectBirthdateOfCoApplicant() async {
       try {
         final DateTime? picked = await showDatePicker(
           lastDate: DateTime(2050),
           context: context,
           initialDate:
+              // ignore: unnecessary_null_comparison
               _selectedBirthdate != null ? _selectedBirthdate : DateTime.now(),
           firstDate: DateTime(1940),
         );
@@ -127,7 +106,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'City of Property',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -162,7 +141,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Property Type',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -187,7 +166,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Property Purchase Value',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -222,7 +201,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Loan Amount Required',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -263,7 +242,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'City of Property',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -298,7 +277,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Property Type',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -323,7 +302,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Loan amount taken in existing loan',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -358,7 +337,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Approx date of loan taken',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -393,7 +372,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Approx current EMI',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -428,7 +407,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Bank Name',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -463,7 +442,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                       padding: EdgeInsets.only(top: 15),
                       child: Text(
                         'Top up loan required?',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
                   ),
@@ -486,7 +465,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                 'Yes',
                                 style: Theme.of(context)
                                     .primaryTextTheme
-                                    .headline3,
+                                    .displaySmall,
                               )
                             ],
                           ),
@@ -503,7 +482,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                               Text('No',
                                   style: Theme.of(context)
                                       .primaryTextTheme
-                                      .headline3)
+                                      .displaySmall)
                             ],
                           ),
                         ],
@@ -521,7 +500,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'Top up amount required',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -571,7 +550,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Full Name',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -606,7 +585,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Date of birth',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -641,7 +620,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Marital Status',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -660,7 +639,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             }),
                         Text(
                           'Married',
-                          style: Theme.of(context).primaryTextTheme.headline3,
+                          style:
+                              Theme.of(context).primaryTextTheme.displaySmall,
                         )
                       ],
                     ),
@@ -673,7 +653,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                               homeLoanController.setMaritalStatus(val as int);
                             }),
                         Text('Single',
-                            style: Theme.of(context).primaryTextTheme.headline3)
+                            style:
+                                Theme.of(context).primaryTextTheme.displaySmall)
                       ],
                     ),
                     Row(
@@ -686,7 +667,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             }),
                         Text(
                           'Other',
-                          style: Theme.of(context).primaryTextTheme.headline3,
+                          style:
+                              Theme.of(context).primaryTextTheme.displaySmall,
                         )
                       ],
                     ),
@@ -700,7 +682,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Is there a Co-applicant?',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -719,7 +701,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             }),
                         Text(
                           'Yes',
-                          style: Theme.of(context).primaryTextTheme.headline3,
+                          style:
+                              Theme.of(context).primaryTextTheme.displaySmall,
                         )
                       ],
                     ),
@@ -732,7 +715,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                               homeLoanController.setCoApplicant(val as int);
                             }),
                         Text('No',
-                            style: Theme.of(context).primaryTextTheme.headline3)
+                            style:
+                                Theme.of(context).primaryTextTheme.displaySmall)
                       ],
                     ),
                   ],
@@ -749,7 +733,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Co-applicant Name',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -786,7 +770,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Co-applicant Date of Birth',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -824,7 +808,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Co-applicant Marital Status',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -849,7 +833,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                       'Married',
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .headline3,
+                                          .displaySmall,
                                     )
                                   ],
                                 ),
@@ -867,7 +851,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                     Text('Single',
                                         style: Theme.of(context)
                                             .primaryTextTheme
-                                            .headline3)
+                                            .displaySmall)
                                   ],
                                 ),
                                 Row(
@@ -885,7 +869,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                       'Other',
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .headline3,
+                                          .displaySmall,
                                     )
                                   ],
                                 ),
@@ -899,7 +883,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Relation with Co-applicant',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -944,7 +928,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                     ),
                     Text(
                       'Enter your address',
-                      style: Theme.of(context).primaryTextTheme.headline4,
+                      style: Theme.of(context).primaryTextTheme.headlineMedium,
                     ),
                   ],
                 ),
@@ -970,7 +954,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                           padding: EdgeInsets.only(left: 15, right: 10, top: 5),
                           child: Text(
                             'Important documents like loan agreements, no dues certificate will be sent to this address',
-                            style: Theme.of(context).primaryTextTheme.headline3,
+                            style:
+                                Theme.of(context).primaryTextTheme.displaySmall,
                           ),
                         ),
                       )
@@ -983,7 +968,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 30),
                 child: Text(
                   'House',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1018,7 +1003,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Street',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1053,7 +1038,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Locality',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1088,7 +1073,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Pin Code',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1123,7 +1108,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'City',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1158,7 +1143,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'State',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1193,7 +1178,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Is Correspondence address same as Permanent address?',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1214,7 +1199,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             }),
                         Text(
                           'Yes',
-                          style: Theme.of(context).primaryTextTheme.headline3,
+                          style:
+                              Theme.of(context).primaryTextTheme.displaySmall,
                         )
                       ],
                     ),
@@ -1229,7 +1215,8 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   .setCorrespondingAddress(val as int);
                             }),
                         Text('No',
-                            style: Theme.of(context).primaryTextTheme.headline3)
+                            style:
+                                Theme.of(context).primaryTextTheme.displaySmall)
                       ],
                     ),
                   ],
@@ -1246,7 +1233,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 30),
                             child: Text(
                               'House',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1283,7 +1270,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Street',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1320,7 +1307,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Locality',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1357,7 +1344,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Pin Code',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1394,7 +1381,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'City',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1431,7 +1418,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'State',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1480,7 +1467,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                   borderRadius: BorderRadius.all(Radius.circular(10))),
               padding: EdgeInsets.all(10),
               child: Text('These details are subject to verification',
-                  style: Theme.of(context).primaryTextTheme.headline3),
+                  style: Theme.of(context).primaryTextTheme.displaySmall),
             ),
             Container(
               width: Get.width,
@@ -1488,7 +1475,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 30),
                 child: Text(
                   'Employment Type',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1512,7 +1499,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Your Monthly Income',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1551,7 +1538,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Service Type',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1577,7 +1564,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Nature of Employment',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1611,7 +1598,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                             padding: EdgeInsets.only(top: 15),
                             child: Text(
                               'Industry',
-                              style: Theme.of(context).textTheme.bodyText1,
+                              style: Theme.of(context).textTheme.bodyLarge,
                             ),
                           ),
                         ),
@@ -1664,7 +1651,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                 child: Text('Work Address',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline1),
+                                        .displayLarge),
                               ),
                               Container(
                                 width: Get.width,
@@ -1673,7 +1660,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'Address Line 1',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1712,7 +1699,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'Address Line 2',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1751,7 +1738,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'Area',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1790,7 +1777,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'Pin Code',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1829,7 +1816,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'City',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1868,7 +1855,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                                   child: Text(
                                     'State',
                                     style:
-                                        Theme.of(context).textTheme.bodyText1,
+                                        Theme.of(context).textTheme.bodyLarge,
                                   ),
                                 ),
                               ),
@@ -1918,7 +1905,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Tell us more about yourself',
-                  style: Theme.of(context).primaryTextTheme.headline1,
+                  style: Theme.of(context).primaryTextTheme.displayLarge,
                 ),
               ),
             ),
@@ -1928,7 +1915,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 30),
                 child: Text(
                   'Current Residence Type',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1952,7 +1939,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Estimated Monthly Household Expenses',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -1993,7 +1980,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                 padding: EdgeInsets.only(top: 15),
                 child: Text(
                   'Enter your PAN',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),
             ),
@@ -2090,7 +2077,7 @@ class BasicDetailEntryHLScreen extends BaseRoute {
                     children: [
                       Text(
                         '${titles[homeLoanController.indexValue]}',
-                        style: Theme.of(context).primaryTextTheme.headline3,
+                        style: Theme.of(context).primaryTextTheme.displaySmall,
                       ),
                       Container(
                           width: Get.width,

@@ -42,11 +42,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Lead Id",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("LEAD-00010501",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -58,11 +58,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Name",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("Rajesh Ramanbhai Patel",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -74,11 +74,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Lead Source",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("SubDSA-DSA001",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -90,11 +90,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Email",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("abc@gmail.com",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -106,11 +106,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Aadhar Number",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("1200210014001584",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -122,11 +122,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("PAN Number",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("BARAA62",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -138,11 +138,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Loan Type",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("Business Loan",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -154,11 +154,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Loan Amount",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("${global.currencySymbol}500000",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -170,11 +170,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Employment Type",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("Self Employee",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),
@@ -186,11 +186,11 @@ class LeadDetailScreen extends BaseRoute {
                   padding: EdgeInsets.only(top: 0),
                   child: ListTile(
                     title: Text("Address",
-                        style: Theme.of(context).textTheme.headline5),
+                        style: Theme.of(context).textTheme.headlineSmall),
                     subtitle: Padding(
                       padding: const EdgeInsets.only(left: 0, top: 5),
                       child: Text("Surat,Gujarat,India",
-                          style: Theme.of(context).primaryTextTheme.headline6),
+                          style: Theme.of(context).primaryTextTheme.titleLarge),
                     ),
                   ),
                 ),

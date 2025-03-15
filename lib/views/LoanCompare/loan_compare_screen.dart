@@ -10,7 +10,6 @@ import 'package:credit_app/widget/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:credit_app/utils/global.dart' as global;
 //models
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //packages
 import 'package:get/get.dart';
 
@@ -52,7 +51,7 @@ class LoanCompareScreen extends BaseRoute {
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           'Loan Type',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       Padding(
@@ -75,7 +74,7 @@ class LoanCompareScreen extends BaseRoute {
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           'Loan Amount',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       Padding(
@@ -109,7 +108,7 @@ class LoanCompareScreen extends BaseRoute {
                         padding: EdgeInsets.only(top: 15),
                         child: Text(
                           'Tenure (Months)',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       Padding(
@@ -164,12 +163,13 @@ class LoanCompareScreen extends BaseRoute {
         controller: scrollController,
         scrollDirection: Axis.horizontal,
         child: DataTable(
-          headingTextStyle: Theme.of(context).textTheme.headline5,
+          headingTextStyle: Theme.of(context).textTheme.headlineSmall,
           dividerThickness: 2,
           horizontalMargin: 15,
           columnSpacing: 15,
+          // ignore: deprecated_member_use
           dataRowHeight: 50,
-          dataTextStyle: Theme.of(context).primaryTextTheme.headline6,
+          dataTextStyle: Theme.of(context).primaryTextTheme.titleLarge,
           columns: [
             DataColumn(
                 label: Text(

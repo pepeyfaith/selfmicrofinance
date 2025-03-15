@@ -1,6 +1,5 @@
 // ignore_for_file: non_constant_identifier_names, must_be_immutable
 //flutter
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:credit_app/controllers/business_loan_controller.dart';
 import 'package:credit_app/controllers/home_controller.dart';
 import 'package:credit_app/controllers/home_loan_controller.dart';
@@ -27,7 +26,7 @@ import 'package:credit_app/widget/common_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-//packages
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
 import 'package:get/get.dart';
 
 class HomeAdmin extends BaseRoute {
@@ -169,32 +168,35 @@ class HomeAdmin extends BaseRoute {
                               children: [
                                 Column(
                                   children: [
-                                    CarouselSlider(
+                                    carousel_slider.CarouselSlider(
                                         items: banners(context),
                                         carouselController: carouselController,
-                                        options: CarouselOptions(
-                                            height: MediaQuery.of(context)
-                                                    .size
-                                                    .height *
-                                                0.20,
-                                            aspectRatio: 1,
-                                            viewportFraction: 1,
-                                            initialPage:
-                                                homeController.currentIndex,
-                                            enableInfiniteScroll: false,
-                                            reverse: false,
-                                            autoPlay: true,
-                                            autoPlayInterval:
-                                                Duration(seconds: 3),
-                                            autoPlayAnimationDuration:
-                                                Duration(milliseconds: 800),
-                                            autoPlayCurve: Curves.fastOutSlowIn,
-                                            enlargeCenterPage: true,
-                                            scrollDirection: Axis.horizontal,
-                                            onPageChanged: (index, _) {
-                                              homeController
-                                                  .setCurrentIndex(index);
-                                            })),
+                                        options:
+                                            carousel_slider.CarouselOptions(
+                                                height: MediaQuery.of(context)
+                                                        .size
+                                                        .height *
+                                                    0.20,
+                                                aspectRatio: 1,
+                                                viewportFraction: 1,
+                                                initialPage:
+                                                    homeController.currentIndex,
+                                                enableInfiniteScroll: false,
+                                                reverse: false,
+                                                autoPlay: true,
+                                                autoPlayInterval:
+                                                    Duration(seconds: 3),
+                                                autoPlayAnimationDuration:
+                                                    Duration(milliseconds: 800),
+                                                autoPlayCurve:
+                                                    Curves.fastOutSlowIn,
+                                                enlargeCenterPage: true,
+                                                scrollDirection:
+                                                    Axis.horizontal,
+                                                onPageChanged: (index, _) {
+                                                  homeController
+                                                      .setCurrentIndex(index);
+                                                })),
                                     Padding(
                                       padding: const EdgeInsets.only(top: 0),
                                       child: DotsIndicator(
@@ -444,8 +446,9 @@ class HomeAdmin extends BaseRoute {
                           children: [
                             Text(
                               '${titleList[index]}',
-                              style:
-                                  Theme.of(context).primaryTextTheme.headline1,
+                              style: Theme.of(context)
+                                  .primaryTextTheme
+                                  .displayLarge,
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 5),
@@ -455,7 +458,7 @@ class HomeAdmin extends BaseRoute {
                                     '${subTitle[index]}',
                                     style: Theme.of(context)
                                         .primaryTextTheme
-                                        .headline2,
+                                        .displayMedium,
                                   )),
                             ),
                           ],
@@ -595,7 +598,7 @@ Widget pdflecturelist(context) {
                                       "Test",
                                       style: Theme.of(context)
                                           .primaryTextTheme
-                                          .subtitle1,
+                                          .titleMedium,
                                     ),
                                   ],
                                 ),
@@ -604,7 +607,7 @@ Widget pdflecturelist(context) {
                                     Text('ebook for ',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline6),
+                                            .titleLarge),
                                   ],
                                 ),
                               ],
